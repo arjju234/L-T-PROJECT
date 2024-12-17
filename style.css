@@ -1,0 +1,122 @@
+/* General Body Styling */
+body {
+    background-color: #e8f5e9; /* Lighter green background */
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #3894b8; /* Dark green text color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Container Styling */
+.container {
+    margin-top: 50px;
+    padding: 20px;
+}
+
+/* Card Styling */
+.card {
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    border: none;
+    background-color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Slight lift effect on hover */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+}
+
+.card-header {
+    background-color: #388e3c; /* Stylish green header */
+    color: white; /* White text on green background */
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 12px 12px 0 0;
+}
+
+.card-footer {
+    background-color: #f1f8f6; /* Light green footer */
+    border-radius: 0 0 12px 12px;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Form Upload Section */
+form .form-control-file {
+    margin: 20px auto;
+    display: block;
+}
+
+button.btn {
+    padding: 12px 25px;
+    font-size: 16px;
+    background-color: #4caf50; /* Lively green button */
+    color: white; /* White text on button */
+    border: none;
+    border-radius: 25px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.btn:hover {
+    background-color: #388e3c; /* Darker green on hover */
+}
+
+button.btn:focus {
+    outline: none; /* Remove focus outline */
+}
+
+/* Image Styling */
+img {
+    border: 2px solid #4caf50; /* Green border around images */
+    border-radius: 8px;
+    padding: 5px;
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Flash Message Styling */
+.alert {
+    margin-top: 20px;
+    background-color: #c8e6c9; /* Light green background for alert */
+    color: #388e3c; /* Dark green text */
+    border-left: 5px solid #4caf50; /* Green border on left */
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: opacity 0.3s ease;
+}
+
+/* Centered Text for Footer */
+.card-footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #3894b8; /* Green text for footer */
+    font-weight: bold;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .card-header {
+        font-size: 16px;
+    }
+
+    button.btn {
+        width: 100%; /* Full-width buttons on smaller screens */
+    }
+
+    .card-footer {
+        font-size: 12px;
+    }
+}
